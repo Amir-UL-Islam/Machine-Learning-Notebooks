@@ -3,3 +3,5 @@
 * Data Processing
 * Getting Started with NumPy
 * NumPy Arrays
+* Dimensions in Arrays
+* Numpy Ranged data
