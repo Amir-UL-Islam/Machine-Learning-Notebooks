@@ -5,3 +5,5 @@
 * NumPy Arrays
 * Dimensions in Arrays
 * Numpy Ranged data
+* Transposing
+* Math
