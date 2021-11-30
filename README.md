@@ -7,3 +7,4 @@
 * Numpy Ranged data
 * Transposing
 * Math
+* Random Number
