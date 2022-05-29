@@ -194,9 +194,6 @@ d = a.intersection(b)
 print(d)
 
 
-
-
-
 # Defining a string
 string = ['a', 'for', 'apple', 'b', 'foor', 'bat']
 
