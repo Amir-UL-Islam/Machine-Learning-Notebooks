@@ -1,11 +1,3 @@
 
-# Data Manipulation with NumPy
+# Machine-Learning-Notebooks
 ## Table of Contents
-* Data Processing
-* Getting Started with NumPy
-* NumPy Arrays
-* Dimensions in Arrays
-* Numpy Ranged data
-* Transposing
-* Math
-* Random Number
