@@ -28,11 +28,58 @@ ipd.Audio(audio_files[5])
 
 
 
+# fig, axs = plt.subplots(3, 2, figsize=(15, 7), sharex=True, sharey=True)
+
+# # Calculate the time array
+# time = np.arange(normal.shape[0]) / sfreq
+
+## Two DataFrames, normal and abnormal,
+## each with the shape of (n_times_points, n_audio_files) containing the audio for several heartbeats are 
+## available in your workspace.
+
+# # Stack the normal/abnormal audio so you can loop and plot
+# stacked_audio = np.hstack([normal, abnormal]).T
+
+# # Loop through each audio file / ax object and plot
+# # .T.ravel() transposes the array, then unravels it into a 1-D vector for looping
+# for iaudio, ax in zip(stacked_audio, axs.T.ravel()):
+#     ax.plot(time, iaudio)
+# show_plot_and_make_titles()
+
+
+# # Average across the audio files of each DataFrame
+# mean_normal = np.mean(normal, axis=1)
+# mean_abnormal = np.mean(abnormal, axis=1)
+
+# # Plot each average over time
+# fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 3), sharey=True)
+# ax1.plot(time, mean_normal)
+# ax1.set(title="Normal Data")
+# ax2.plot(time, mean_abnormal)
+# ax2.set(title="Abnormal Data")
+# plt.show()
+
+
+# DataFrames (normal and abnormal) into X_train, X_test, y_train, and y_test.
+
+# from sklearn.svm import LinearSVC
+
+# # Initialize and fit the model
+# model = LinearSVC()
+# model.fit(X_train, y_train)
+
+# # Generate predictions and score them manually
+# predictions = model.predict(X_test)
+# print(sum(predictions == y_test.squeeze()) / len(y_test))
+
+
 # Read in the first audio file, create the time array
 audio, sfreq_or_sample_rate = lr.load(audio_files[0])
 time = np.arange(0, len(audio)) /  sfreq_or_sample_rate # time gives a array of time gape of each heartbeat
 
-print(time) 
+print(audio)
+print(sfreq_or_sample_rate)
+print(time)
 
 
 
